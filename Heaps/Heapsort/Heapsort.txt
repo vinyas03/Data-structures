@@ -1,0 +1,23 @@
+Heapsort is a comparison-based sorting algorithm that uses a binary heap data structure. The choice of whether to sort in ascending or descending order depends on how you construct and manipulate the heap.
+
+### Heapsort for Ascending Order:
+1. **Max-Heap**: To sort an array in ascending order, you would typically use a max-heap. In a max-heap, the largest element is at the root, and the heap property ensures that every parent node is greater than or equal to its child nodes.
+2. **Process**:
+   - Build a max-heap from the input data.
+   - Swap the root of the heap (the largest element) with the last element of the heap.
+   - Reduce the size of the heap by one and heapify the root.
+   - Repeat the process until the heap is empty.
+
+### Heapsort for Descending Order:
+1. **Min-Heap**: To sort an array in descending order, you would use a min-heap. In a min-heap, the smallest element is at the root, and the heap property ensures that every parent node is less than or equal to its child nodes.
+2. **Process**:
+   - Build a min-heap from the input data.
+   - Swap the root of the heap (the smallest element) with the last element of the heap.
+   - Reduce the size of the heap by one and heapify the root.
+   - Repeat the process until the heap is empty.
+
+### Summary:
+- Use a **max-heap** for ascending order heapsort.
+- Use a **min-heap** for descending order heapsort.
+
+In practice, max-heaps are more commonly used for heapsort, as ascending order is often the desired outcome/
